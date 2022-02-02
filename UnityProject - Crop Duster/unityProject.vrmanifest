@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.unityprojectcropduster.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\tiger\\Documents\\GitHub\\204-crop-duster\\UnityProject - Crop Duster\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "UnityProject - Crop Duster [Testing]"
+        }
+      }
+    }
+  ]
+}
