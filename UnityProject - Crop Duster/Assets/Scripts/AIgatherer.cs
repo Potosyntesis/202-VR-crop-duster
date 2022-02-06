@@ -107,11 +107,20 @@ public class AIgatherer : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, SightRange);
     }
-    private void OnTriggerEnter(Collider other)
+
+    private void CollisionEnter(Collision collision)
     {
-        if (other.transform.gameObject.tag =="MineStoneTag")
+        if(collision.gameObject.tag == "MineStoneTag")
         {
-            Destroy(other.transform.gameObject);
+            Destroy(collision.gameObject);
         }
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.transform.gameObject.tag =="MineStoneTag")
+    //    {
+    //        Destroy(other.transform.gameObject);
+    //    }
+    //}
 }

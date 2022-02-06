@@ -108,11 +108,20 @@ public class AIgathererTrees : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, SightRange);
     }
-    private void OnTriggerEnter(Collider other)//collision property
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.transform.gameObject.tag == "TreeTag")
+        if(collision.gameObject.tag == "TreeTag")
         {
-            Destroy(other.transform.gameObject);
+            Destroy(collision.gameObject);
         }
     }
+
+    //private void OnTriggerEnter(Collider other)//collision property
+    //{
+    //    if (other.transform.gameObject.tag == "TreeTag")
+    //    {
+    //        Destroy(other.transform.gameObject);
+    //    }
+    //}
 }

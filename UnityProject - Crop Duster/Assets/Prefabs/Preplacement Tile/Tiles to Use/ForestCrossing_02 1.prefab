@@ -99,6 +99,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridSnapSize: 100
   WorldResourceTile: {fileID: 6541706034123935922, guid: 65a4daee0a31676439d062bfa830d44c, type: 3}
+  m_TargetSource: 2
+  m_ClickAction:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
+  m_CancelTargetSource: 2
+  m_CancelClickAction:
+    actionPath: /actions/default/in/GrabPinch
+    needsReinit: 0
+  isVR: 1
 --- !u!54 &-502458933537921508
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -124,7 +133,7 @@ BoxCollider:
   m_GameObject: {fileID: 6541706034123935922}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 0.10000007, z: 1}
   m_Center: {x: 0, y: 0.050000012, z: 0}

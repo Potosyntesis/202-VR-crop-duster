@@ -33,4 +33,24 @@ public class AbilityHandler : MonoBehaviour, IPointerDownHandler
         }
     }
 
+    public void Earthquake()
+    {
+        buildingAmount = GameObject.FindGameObjectsWithTag("Building");
+
+        CameraShaker.Instance.ShakeOnce(6f, 6f, 4f, 4f);
+
+        Debug.Log(buildingAmount);
+        Debug.Log("Earthquake");
+        for (int i = 0; i < buildingAmount.Length; i++)
+        {
+            chance = Random.Range(1, 4);
+            Debug.Log(chance);
+            if (chance == 1)
+            {
+                Destroy(buildingAmount[i]);
+            }
+
+        }
+    }
+
 }

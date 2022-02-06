@@ -8,18 +8,23 @@ TagManager:
   - Building
   - MineStoneTag
   - TreeTag
+  - UI
+  - projectile
+  - FxTemporaire
+  - Ground
+  - Teleporter
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - TileLayer
   - TreeMask
   - StoneMask
   - Astronaut
-  - 
+  - Teleporter
   - 
   - 
   - 
